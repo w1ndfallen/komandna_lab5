@@ -1,6 +1,8 @@
 #include <iostream>
+
 using namespace std;
 
+// Denis
 int main() {
     int A[12];
     cout << "Введіть 12 цілих чисел для масиву A:" << endl;
@@ -20,7 +22,9 @@ int main() {
             }
         }
     }
+// Denis
 
+// Maksim
     if(oddCount < 2) {
         cout << "У масиві недостатньо непарних елементів для виконання операції." << endl;
         return 0;
@@ -37,7 +41,9 @@ int main() {
             C[i] = A[i]; // Уникнення ділення на себе
         }
     }
+// Maksim
 
+// Matvii
     // Виведення результатів
     cout << "Початковий масив A: ";
     for(int i = 0; i < 12; i++) {
@@ -53,3 +59,4 @@ int main() {
 
     return 0;
 }
+// Matvii
