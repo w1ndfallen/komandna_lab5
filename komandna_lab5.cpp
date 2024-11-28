@@ -5,12 +5,12 @@ using namespace std;
 // Denis
 int main() {
     int A[12];
-    cout << "Введіть 12 цілих чисел для масиву A:" << endl;
+    cout << "Enter 12 integers for array A: " << endl;
     for(int i = 0; i < 12; i++) {
         cin >> A[i];
     }
 
-    // Пошук другого непарного елемента
+    // Search for the second odd element
     int oddCount = 0;
     int secondOdd = 0;
     for(int i = 0; i < 12; i++) {
@@ -26,32 +26,32 @@ int main() {
 
 // Maksim
     if(oddCount < 2) {
-        cout << "У масиві недостатньо непарних елементів для виконання операції." << endl;
+        cout << "There are not enough odd elements in the array to perform the operation." << endl;
         return 0;
     }
 
-    // Створення масиву C
+    // Creating an array C
     int C[12];
-    C[0] = secondOdd; // Перший елемент - другий непарний
+    C[0] = secondOdd; // The first element is the second odd
 
     for(int i = 1; i < 12; i++) {
         if(A[i] != secondOdd) {
             C[i] = A[i] / secondOdd;
         } else {
-            C[i] = A[i]; // Уникнення ділення на себе
+            C[i] = A[i]; // Avoiding dividing by yourself
         }
     }
 // Maksim
 
 // Matvii
-    // Виведення результатів
-    cout << "Початковий масив A: ";
+    // Output of results
+    cout << "Initial array A: ";
     for(int i = 0; i < 12; i++) {
         cout << A[i] << " ";
     }
     cout << endl;
 
-    cout << "Новий масив C: ";
+    cout << "New array C:";
     for(int i = 0; i < 12; i++) {
         cout << C[i] << " ";
     }
